@@ -1,0 +1,9 @@
+<!-- v1.0 - 订单详情（供应商视角，主操作：签章） -->
+<view class="container">
+  <view class="card">
+    <view class="tip-text">如您的合同已生成并待签章，请点击下方按钮完成签章。</view>
+    <button class="btn-primary" loading="{{signing}}" bindtap="signContract">
+      确认签章
+    </button>
+  </view>
+</view>

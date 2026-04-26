@@ -1,0 +1,26 @@
+<!-- v1.0 - 采购公告列表 -->
+<view class="container">
+  <block wx:if="{{loading}}">
+    <view class="loading-tip">加载中...</view>
+  </block>
+  <block wx:elif="{{announcements.length === 0}}">
+    <view class="empty-tip">暂无公告</view>
+  </block>
+  <block wx:else>
+    <view class="card announcement-card" wx:for="{{announcements}}" wx:key="id"
+      data-id="{{item.id}}" bindtap="goDetail">
+      <view class="ann-header">
+        <text class="ann-name">{{item.product_name}}</text>
+        <text class="tag tag-green">进行中</text>
+      </view>
+      <view class="ann-meta">
+        <text>单价：¥{{item.unit_price}}/吨</text>
+        <text>剩余：{{item.remaining_quantity}}吨</text>
+      </view>
+      <view class="ann-meta">
+        <text>运输：{{item.transport_arrangement === 'buyer' ? '买方安排' : item.transport_arrangement === 'seller' ? '自送' : '第三方'}}</text>
+      </view>
+      <view class="ann-arrow">→</view>
+    </view>
+  </block>
+</view>

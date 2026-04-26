@@ -1,0 +1,38 @@
+/* v1.0 - 仓管员任务列表样式 */
+.empty-tip {
+  text-align: center;
+  color: #999;
+  padding: 80rpx 0;
+  font-size: 28rpx;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.task-no {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.task-product {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8rpx;
+}
+
+.task-meta {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+
+.task-arrow {
+  font-size: 26rpx;
+  color: #1677ff;
+  text-align: right;
+}

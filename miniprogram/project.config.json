@@ -1,0 +1,36 @@
+{
+  "appid": "wx_dev_appid",
+  "compileType": "miniprogram",
+  "libVersion": "3.6.6",
+  "projectname": "物采通",
+  "description": "废旧物资收购交易平台门户端",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "previewUploadDangerousData": false,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

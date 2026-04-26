@@ -1,0 +1,23 @@
+<!-- v1.0 - 首页布局 -->
+<view class="container">
+  <!-- 顶部欢迎区 -->
+  <view class="header-card">
+    <text class="welcome">物采通</text>
+    <text class="role-tag">{{
+      role === 'A' ? '供应商' :
+      role === 'BROKER' ? '经纪人' :
+      role === 'DRIVER' ? '司机' :
+      role === 'WAREHOUSE_KEEPER' ? '仓管员' : ''
+    }}</text>
+    <text class="logout" bindtap="logout">退出</text>
+  </view>
+
+  <!-- 功能菜单 -->
+  <view class="menu-grid">
+    <view class="menu-item" wx:for="{{menuItems}}" wx:key="path"
+      data-path="{{item.path}}" bindtap="navigateTo">
+      <text class="menu-icon">{{item.icon}}</text>
+      <text class="menu-title">{{item.title}}</text>
+    </view>
+  </view>
+</view>

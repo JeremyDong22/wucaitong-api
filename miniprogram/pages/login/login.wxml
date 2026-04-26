@@ -1,0 +1,37 @@
+<!-- v1.0 - 登录页布局 -->
+<view class="login-container">
+  <view class="logo-area">
+    <text class="logo-title">物采通</text>
+    <text class="logo-sub">废旧物资收购交易平台</text>
+  </view>
+
+  <view class="form-card">
+    <view class="form-item">
+      <text class="label">手机号</text>
+      <input class="input" type="number" maxlength="11"
+        placeholder="请输入手机号" value="{{phone}}" bindinput="onPhoneInput" />
+    </view>
+
+    <view class="form-item">
+      <text class="label">验证码</text>
+      <view class="code-row">
+        <input class="input code-input" type="number" maxlength="6"
+          placeholder="短信验证码" value="{{code}}" bindinput="onCodeInput" />
+        <button class="sms-btn {{countdown > 0 ? 'disabled' : ''}}"
+          disabled="{{countdown > 0}}" bindtap="sendSms">
+          {{countdown > 0 ? countdown + 's' : (smsSent ? '重新获取' : '获取验证码')}}
+        </button>
+      </view>
+    </view>
+
+    <button class="btn-primary login-btn" loading="{{loading}}" bindtap="loginByPhone">
+      登录
+    </button>
+
+    <view class="divider"><text>或</text></view>
+
+    <button class="btn-wx" open-type="getPhoneNumber" bindtap="loginByWx">
+      微信登录
+    </button>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<!-- v1.0 - 司机任务页 -->
+<view class="container">
+  <view class="card">
+    <view class="section-title">订单号</view>
+    <input class="form-input" placeholder="输入订单ID"
+      value="{{orderId}}" bindinput="onOrderIdInput" />
+  </view>
+
+  <!-- GPS打卡 -->
+  <view class="card">
+    <view class="section-title">GPS打卡</view>
+    <view class="btn-group">
+      <button class="btn-primary checkin-btn" loading="{{checkingIn}}"
+        data-type="depart" bindtap="checkin">出发</button>
+      <button class="btn-primary checkin-btn" loading="{{checkingIn}}"
+        data-type="arrive_source" bindtap="checkin">到达货源地</button>
+      <button class="btn-primary checkin-btn" loading="{{checkingIn}}"
+        data-type="arrive_warehouse" bindtap="checkin">到达仓库</button>
+    </view>
+  </view>
+
+  <!-- 上传磅单 -->
+  <view class="card">
+    <view class="section-title">上传磅单照片</view>
+    <button class="btn-default" loading="{{uploading}}" bindtap="uploadEvidence">
+      📷 选择照片上传
+    </button>
+  </view>
+</view>

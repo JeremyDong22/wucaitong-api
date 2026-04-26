@@ -1,0 +1,9 @@
+<!-- v1.0 - 入库签章确认 -->
+<view class="container">
+  <view class="card">
+    <view class="tip">请确认货物已完成入库检验，点击下方按钮完成签章。签章后将自动生成合同并通知双方。</view>
+    <button class="btn-primary" loading="{{submitting}}" bindtap="confirm">
+      确认入库签章
+    </button>
+  </view>
+</view>

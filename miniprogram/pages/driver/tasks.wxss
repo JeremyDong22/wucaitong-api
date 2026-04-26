@@ -1,0 +1,42 @@
+/* v1.0 - 司机任务样式 */
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.form-input {
+  width: 100%;
+  height: 80rpx;
+  border: 2rpx solid #e8e8e8;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.checkin-btn {
+  height: 88rpx;
+  background: #1677ff;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 12rpx;
+  border: none;
+}
+
+.btn-default {
+  width: 100%;
+  height: 88rpx;
+  background: #fff;
+  color: #333;
+  font-size: 30rpx;
+  border-radius: 12rpx;
+  border: 2rpx solid #d9d9d9;
+}

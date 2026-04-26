@@ -1,0 +1,16 @@
+<!-- v1.0 - 仓管员入库任务列表 -->
+<view class="container">
+  <block wx:if="{{tasks.length === 0 && !loading}}">
+    <view class="empty-tip">暂无待入库任务</view>
+  </block>
+  <view class="card task-card" wx:for="{{tasks}}" wx:key="id"
+    data-id="{{item.id}}" bindtap="goReceipt">
+    <view class="task-header">
+      <text class="task-no">{{item.order_no}}</text>
+      <text class="tag tag-orange">{{item.status}}</text>
+    </view>
+    <view class="task-product">{{item.product_name}}</view>
+    <view class="task-meta">数量：{{item.quantity}}吨</view>
+    <view class="task-arrow">点击签章 →</view>
+  </view>
+</view>

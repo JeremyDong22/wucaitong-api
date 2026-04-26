@@ -1,0 +1,24 @@
+<!-- v1.0 - 经纪人代填供应商 -->
+<view class="container">
+  <view class="card">
+    <view class="form-item">
+      <text class="form-label">供应商手机号</text>
+      <input class="form-input" type="number" maxlength="11"
+        placeholder="供应商注册手机号" value="{{supplierPhone}}" bindinput="onPhoneInput" />
+    </view>
+    <view class="form-item">
+      <text class="form-label">认售数量（吨）</text>
+      <input class="form-input" type="digit"
+        placeholder="数量" value="{{quantity}}" bindinput="onQuantityInput" />
+    </view>
+    <view class="form-item">
+      <text class="form-label">预计交货日期（可选）</text>
+      <picker mode="date" bindchange="onDateChange">
+        <view class="form-input picker-value">{{deliveryDate || '选择日期'}}</view>
+      </picker>
+    </view>
+    <button class="btn-primary" loading="{{submitting}}" bindtap="submit">
+      提交供应商信息
+    </button>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/announcements/list",
+    "pages/announcements/detail",
+    "pages/orders/list",
+    "pages/orders/detail",
+    "pages/broker/tasks",
+    "pages/broker/task-detail",
+    "pages/driver/tasks",
+    "pages/warehouse/tasks",
+    "pages/warehouse/receipt"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1677ff",
+    "navigationBarTitleText": "物采通",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1677ff",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/announcements/list",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/orders/list",
+        "text": "订单"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

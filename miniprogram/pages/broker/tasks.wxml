@@ -1,0 +1,26 @@
+<!-- v1.0 - 经纪人任务列表 -->
+<view class="container">
+  <block wx:if="{{tasks.length === 0 && !loading}}">
+    <view class="empty-tip">暂无任务</view>
+  </block>
+  <view class="card task-item" wx:for="{{tasks}}" wx:key="id">
+    <view class="task-header">
+      <text class="task-no">{{item.task_no}}</text>
+      <text class="tag {{item.status === 'pending' ? 'tag-orange' : 'tag-green'}}">
+        {{item.status === 'pending' ? '待接受' : item.status === 'accepted' ? '已接受' : item.status}}
+      </text>
+    </view>
+    <view class="task-product">{{item.product_name}} · {{item.quantity}}吨</view>
+    <view class="task-price">参考单价：¥{{item.unit_price}}/吨</view>
+    <view class="task-actions">
+      <button wx:if="{{item.status === 'pending'}}"
+        class="btn-sm btn-primary" data-id="{{item.id}}" bindtap="acceptTask">
+        接受任务
+      </button>
+      <button wx:if="{{item.status !== 'pending'}}"
+        class="btn-sm btn-default" data-id="{{item.id}}" bindtap="goDetail">
+        代填供应商
+      </button>
+    </view>
+  </view>
+</view>

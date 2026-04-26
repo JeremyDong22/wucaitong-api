@@ -1,0 +1,21 @@
+<!-- v1.0 - 认售表单 -->
+<view class="container">
+  <view class="card">
+    <view class="form-item">
+      <text class="form-label">认售数量（吨）</text>
+      <input class="form-input" type="digit" placeholder="请输入数量"
+        value="{{quantity}}" bindinput="onQuantityInput" />
+    </view>
+    <view class="form-item">
+      <text class="form-label">预计交货日期（可选）</text>
+      <picker mode="date" bindchange="onDateChange">
+        <view class="form-input picker-value">
+          {{deliveryDate || '选择日期'}}
+        </view>
+      </picker>
+    </view>
+    <button class="btn-primary" loading="{{submitting}}" bindtap="submitCommit">
+      提交认售
+    </button>
+  </view>
+</view>

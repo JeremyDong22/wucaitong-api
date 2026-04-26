@@ -1,0 +1,18 @@
+<!-- v1.0 - 订单列表 -->
+<view class="container">
+  <block wx:if="{{orders.length === 0 && !loading}}">
+    <view class="empty-tip">暂无订单</view>
+  </block>
+  <view class="card order-card" wx:for="{{orders}}" wx:key="id"
+    data-id="{{item.id}}" bindtap="goDetail">
+    <view class="order-header">
+      <text class="order-no">{{item.order_no}}</text>
+      <text class="tag tag-blue">{{item.statusLabel}}</text>
+    </view>
+    <view class="order-meta">
+      <text>{{item.product_name}}</text>
+      <text>{{item.quantity}}吨 × ¥{{item.unit_price}}/吨</text>
+    </view>
+    <view class="order-amount">合计：¥{{item.total_amount}}</view>
+  </view>
+</view>

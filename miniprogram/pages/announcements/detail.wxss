@@ -1,0 +1,39 @@
+/* v1.0 - 认售表单样式 */
+.form-item {
+  margin-bottom: 32rpx;
+}
+
+.form-label {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+
+.form-input {
+  width: 100%;
+  height: 88rpx;
+  border: 2rpx solid #e8e8e8;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  background: #fafafa;
+  line-height: 88rpx;
+  color: #333;
+}
+
+.picker-value {
+  color: #333;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 96rpx;
+  background: #1677ff;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 16rpx;
+  border: none;
+  margin-top: 16rpx;
+}

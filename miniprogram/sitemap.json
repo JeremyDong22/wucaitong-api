@@ -1,0 +1,4 @@
+{
+  "desc": "配置以下内容不被微信索引",
+  "rules": [{ "action": "disallow", "page": "*" }]
+}

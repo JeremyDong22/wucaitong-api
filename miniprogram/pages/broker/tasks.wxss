@@ -1,0 +1,57 @@
+/* v1.0 - 经纪人任务列表样式 */
+.empty-tip {
+  text-align: center;
+  color: #999;
+  padding: 80rpx 0;
+  font-size: 28rpx;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.task-no {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.task-product {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8rpx;
+}
+
+.task-price {
+  font-size: 26rpx;
+  color: #888;
+  margin-bottom: 20rpx;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-sm {
+  height: 72rpx;
+  padding: 0 32rpx;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  border: none;
+  line-height: 72rpx;
+}
+
+.btn-sm.btn-primary {
+  background: #1677ff;
+  color: #fff;
+}
+
+.btn-sm.btn-default {
+  background: #fff;
+  color: #1677ff;
+  border: 2rpx solid #1677ff;
+}
