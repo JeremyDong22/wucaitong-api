@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.venv2/
+*.egg-info/
+dist/
+build/
+
+# 环境变量（敏感信息不上传）
+.env
+.env.local
+
+# 前端
+node_modules/
+web-admin/dist/
+web-admin/.env.local
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# 测试
+.pytest_cache/
+.mypy_cache/
+
+# Alembic 缓存
+alembic/versions/__pycache__/
